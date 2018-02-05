@@ -1,0 +1,588 @@
+/*!
+ * Bienvenue dans le template d'Optrick Media
+   Ça me fait plaisir de vous voir ici. 
+   Ici repose le coeur de la structure que j'ai conçu pour mon portfolio.
+ * Framework hybride en migration conçu autour de: 
+ * Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+/* Global Styles */
+#top {
+	background: url(http://www.optrickmedia.com/img/headerprague.jpg) rgba(0,0,0,1) no-repeat center;
+	min-height: 650px;
+	margin: 0 auto;
+	padding: 0;
+}
+#item1 {
+	background: rgba(247,247,247,1);
+	background-image: none;
+}
+#item2 {
+	background: transparent linear-gradient(to bottom, #ff7100 10%, #ff7600 10%) repeat scroll 0% 0%;
+}
+#item3 h2 {
+	text-shadow: 0 1px 2px rgba(255,255,255, 0.41);
+}
+#Incitation{
+	height: 10%;
+}
+.headline{
+	padding-top: 15%;
+}
+.presentation h1, h2, h3, h4{
+	line-height: 1.6;
+}
+.headline  h2, h3, h4{
+	padding: 0;
+	margin: 10px 0;
+}
+.headline h1{
+	padding: 0;
+	margin: 5px 0;
+}
+.item h2{
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0,31);
+}
+.exergue{
+	font-family: 'Arima Madurai', 'Oswald';
+	font-size: 1.2em;
+	font-weight: 300;
+}
+.exergue ul{
+	padding: 8px 0;
+	font-size: 1.1em;
+}
+.exergue ul li{
+	padding: 0 0;
+	font-size: 1.1em;
+}
+.item h4{
+	width: 85%;
+	margin: 0 auto;
+	line-height: 1.45;
+}
+header.carousel {
+    height: 400px;
+}
+.carousel {
+  position: relative;
+  background: #1C1C1C;
+}
+
+/*Structure*/
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+}
+.col-xs-1 p, .col-sm-1 p, .col-md-1 p, .col-lg-1 p, .col-xs-2 p, .col-sm-2 p, .col-md-2 p, .col-lg-2 p, .col-xs-3 p, .col-sm-3 p, .col-md-3 p, .col-lg-3 p, .col-xs-4 p, .col-sm-4 p, .col-md-4 p, .col-lg-4 p, .col-xs-5 p, .col-sm-5 p, .col-md-5 p, .col-lg-5 p, .col-xs-6 p, .col-sm-6 p, .col-md-6 p, .col-lg-6 p, .col-xs-7 p, .col-sm-7 p, .col-md-7 p, .col-lg-7 p, .col-xs-8 p, .col-sm-8 p, .col-md-8 p, .col-lg-8 p, .col-xs-9 p, .col-sm-9 p, .col-md-9 p, .col-lg-9 p, .col-xs-10 p, .col-sm-10 p, .col-md-10 p, .col-lg-10 p, .col-xs-11 p, .col-sm-11 p, .col-md-11 p, .col-lg-11 p, .col-xs-12 p, .col-sm-12 p, .col-md-12 p, .col-lg-12 {
+  padding-right: 32px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.tier p {
+	padding-right: 15px;
+}
+/* ************************************ 
+Image
+/* ************************************ */
+.img-responsive{
+  display: block;
+  max-width: 100%;
+}
+/* ************************************ 
+background
+/* ************************************ */
+.bpoint{
+	background: url(http://optrickmedia.com/img/point.png) no-repeat center;
+	height: 74px;
+}
+.bgrey {
+	background: transparent linear-gradient(to bottom, #CDCDCD 0%, #1C1C1C 100%) repeat scroll 0% 0%;
+	padding: 10px 0;
+}
+.bgreyblanc {
+	background: transparent linear-gradient(to bottom, #CDCDCD 0%, #E3E3E3 100%) repeat scroll 0% 0%;
+	border-bottom: 0,1px solid rgba(0, 0, 0, 0.01);
+	padding: 120px 0;
+	margin: 0 auto;
+}
+.bgreyfooter {
+	background: transparent linear-gradient(to bottom, #E3E3E3 0%, #CDCDCD 100%) repeat scroll 0% 0%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+	padding: 50px 0;
+}
+.bblanc {
+	background: transparent linear-gradient(to bottom, #E3E3E3 5%, #FEFEFE 100%) repeat scroll 0% 0%;
+}
+
+.bblancgris{
+	background: transparent linear-gradient(to bottom, #FEFEFE 10%, #CDCDCD 100%) repeat scroll 0% 0%;
+	border-bottom: 0,1px solid rgba(0, 0, 0, 0.01);
+	margin: 0 auto;
+	padding: 50px 0 70px 0;
+}
+.bblancgris h1{
+	padding: 10px 0;
+/*	width: 16%;   ->>> Page contact ça fuck le chiant */
+}
+.bblancgris h2{
+	margin: .67em 0;
+	font-size: 3em;
+	padding:30px 0;
+}
+.bgreyer {
+	background: transparent linear-gradient(to bottom, #FFFFFF 100%, #A2A0A0 100%) repeat scroll 0% 0%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+	padding: 60px 0 80px;
+	margin: 0px auto;
+}
+.bgreyer {
+	padding:0 0 80px;
+}
+.bdarken {
+	background: linear-gradient(to bottom, #090909 20%, #161616 90%) repeat scroll 0% 0%;
+	border: 1px solid #333333;
+	margin: 0px auto;
+	padding: 80px 0 40px;
+}
+.bdarken h1 {
+	color: #ff7100;
+} 
+.bdarken h4 {
+	color: #E6E6E6;
+}
+.bdarke {
+	background: linear-gradient(to bottom, #161616 20%, #242424 90%) repeat scroll 0% 0%;
+	border: 1px solid #090909;
+	margin: 0px auto;
+	padding: 40px 0 80px;
+}
+.bdarkeWall {
+	background: linear-gradient(to bottom, #242424 20%, #161616 90%) repeat scroll 0% 0%;
+
+	height: 230px;
+}
+.borange {
+	background: transparent linear-gradient(to bottom, #ff7100 10%, #ff7600 10%) repeat scroll 0% 0%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+.borangefooter {
+	background: transparent linear-gradient(to bottom, #EE620B 5%, #ff7100 100%) repeat scroll 0% 0%;
+	padding: 80px 0 30px;
+}
+.borangewall {
+		background: transparent linear-gradient(to bottom, #EE620B 5%, #ff7100 100%) repeat scroll 0% 0%;
+	height: 500px;
+}
+.borangefooter h1 {
+	font-size: 3em;
+}
+.bfirefooter {
+	background: transparent linear-gradient(to bottom, #ff7100 20%, #EE620B 100%) repeat scroll 0% 0%;
+	padding: 5px 0;
+}
+.borangefooter span{
+	color: #642100;
+	font-size: 1.3em;
+	font-weight: 500;
+	padding: 5px 10px;
+}
+.borangefooter a{
+	font-size: 1.3em;
+}
+.tfond-blanc{
+	background: rgba(255,255,255,0.5);
+	border-radius: 5px;
+	box-shadow:0 0 10px 8px rgba(255,255,255,0.6)
+} 
+.tfond-noir{
+	background: rgba(16,16,16,0.61);
+	border-radius: 5px;
+	box-shadow:0 0 10px 10px rgba(6,16,16,0.6);
+	width: 40%;
+	max-width: 360px;
+	min-width: 250px;
+
+}
+/* ************************************ 
+Texte
+/* ************************************ */
+.container p{
+	font-family: 'open sans', sans serif;
+	font-weight: 300;
+}
+.opensans{
+	font-family: 'open sans', sans serif;
+	font-weight: 300;
+}
+.arima{
+	font-family: 'Arima Madurai', 'Oswald';
+	font-weight: 700;
+}
+.oswald {
+	font-family: 'Oswald', sans-serif;
+}
+.tgrower {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+.tgrowsize {
+	font-size: 2.5em;
+}
+.tfatweight{
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.tthin{
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+.tblack {
+	color: #000000;
+}
+.torange {
+	color: #ff7100;
+}
+.tbleu {
+	color: #02cfff;
+}
+.tblancsale {
+	color:rgba(255,255,255, 0.9)
+}
+.tblanc {
+	color: #FFFFFF;
+}
+.tgrey{
+	color: #3A3A3A; 
+}
+.underline-orange{
+	border-bottom: 2px solid #ff7100;
+}
+.t-deco{
+	text-decoration: underline;
+}
+.long{
+	width: 77%;
+}
+.mediumm{
+	width: 58%;
+}
+.medium{
+	width: 40%;
+}
+.short{
+	width: 18%;
+}
+.tleft {
+  text-align: left;
+}
+.tright {
+  text-align: right;
+}
+.tcenter {
+  text-align: center;
+}
+.tjustify {
+  text-align: justify;
+}
+.tnowrap {
+  white-space: nowrap;
+}
+.tlowercase {
+  text-transform: lowercase;
+}
+.tuppercase {
+  text-transform: uppercase;
+}
+.tmuted {
+  color: #777;
+}
+.tprimary {
+  color: #337ab7;
+}
+.HRorange{
+	background-color: #ff7100;
+	height: 1px;
+	border-radius: 25px;
+	width: 15%;
+	margin-top: 0;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 0;
+}
+/* ************************************ 
+Correctif
+/* ************************************ */
+.space-top {
+	padding-top: 40px;	
+}
+.space-bottom{
+	padding-bottom: 40px;	
+}
+.space{
+	padding: 60px 0;
+}
+.spacer {
+	padding-left: 20px;	
+}
+.Dspace-top {
+padding-top: 130px;
+}
+/* ************************************ 
+Bouton-Navigation 
+/* ************************************ */
+.btn-xfat{
+	padding: 20px 40px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.navbar-bleu {
+	background: #02CFFF;
+	border-color:4px solid rgba(255,255,255,0.9);
+	min-height: 75px
+}
+.navbar-right {
+	padding-top: 12px;
+}
+.navbar-right a {
+	font-family: 'oswald', serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8em;
+}
+.navbar-header a {
+	font-family: 'oswald', cursive;
+	text-transform: uppercase;
+	font-size: 2.8em;
+	font-weight: 700;
+	padding-top: 25px; 
+	text-decoration: none;}
+.navbar-header a:hover {
+	color: #803506;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	text-decoration: dotted underline;
+	font-size: 2.8em;
+	font-weight: 700;
+}
+a{
+	font-size: 1.3em;
+	color: #803506;
+	font-weight: 300;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+	text-decoration: dotted underline;
+	font-weight: 300;
+}
+.afatweight a{
+	color: #000000;
+	text-decoration: none;
+	padding-top: 8px;
+	text-decoration: none;
+}
+.afatweight a:hover {
+	color: #803506;
+	text-decoration: none;
+	text-decoration: dotted underline;
+}
+.presentation a{
+	font-size: 1.05em;
+}
+.presentation a:hover {
+	color: #000000;
+	font-weight: 300;
+}
+/* a:visited {
+	font-size: 1.5em;
+	color: #F68938;
+	text-decoration: none;
+	font-weight: 300;
+} */
+.bpoint a{
+	background-color: #ff7100;
+	border-radius: 4px;
+	font-size: 2.5em;
+	color: #000000;
+	height: 20px;
+	text-decoration: none;
+}
+.bpoint a:hover{
+	background-color: #ff7100;
+	border-radius: 4px;
+	font-size: 2.5em;
+	color: #ff7100;
+	height: 24px;
+	text-decoration: none;
+	font-weight: 700;
+}
+.bpoint a:visited {
+	background-color: #ff7100;
+	border-radius: 4px;
+	font-size: 2.5em;
+	color: #000000;
+	height: 20px;
+	text-decoration: none;
+}
+.bpoint a:active,
+.bpoint a .active,
+.open > .dropdown-toggle.bpoint a  {
+	background-color: #000000;
+}
+.bpoint a :focus,
+.bpoint a .focus,
+.bpoint a :active,
+.bpoint a .active,
+.bpoint a .disabled,
+.bpoint a [disabled],
+fieldset[disabled] .bpoint a ,
+.bpoint a .disabled:hover,
+.bpoint a [disabled]:hover,
+fieldset[disabled] .bpoint a :hover,
+.bpoint a .disabled:focus,
+.bpoint a [disabled]:focus,
+fieldset[disabled] .bpoint a :focus,
+.bpoint a .disabled.focus,
+.bpoint a [disabled].focus,
+fieldset[disabled] .bpoint a .focus,
+.bpoint a .disabled:active,
+.bpoint a [disabled]:active,
+fieldset[disabled] .bpoint a :active,
+.bpoint a .disabled.active,
+.bpoint a [disabled].active,
+fieldset[disabled] .bpoint a .active {
+	background: transparent linear-gradient(to bottom, #ff7100 10%, #ff7600 10%) repeat scroll 0% 0%;
+  border-color: #ff7100;
+  color: #ff7100;
+}
+/* Responsive Styles */
+@media(max-width:1200px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+	.quart {
+    width: 50% !important;
+	float: left;
+	}	
+}
+@media(max-width:950px) {
+
+	.tfond-noir{
+	width: 100%;
+	}
+}
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+	.container{
+		padding: 0 15px;	
+	}
+	.quart {
+		height: 300px;
+		clear: both;
+		margin-bottom: 1em;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+}
+
+@media(max-width:767px) {
+	.quart {
+		width: 75% !important;
+	}
+	.tier{
+		width:75%
+	}
+	.m-width {
+	width: 40%;
+	text-decoration: none;
+	}
+	.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 22%;
+    left: 15%;
+    z-index: 10;
+	}
+
+}
+	
+@media(max-width:600px) {
+	.quart {
+	width: 100% !important;
+	}
+	.tierspecial{
+		margin: 0 auto;
+		width:100%;
+	}
+	.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 12%;
+    left: 15%;
+    z-index: 10;
+	}
+	.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    left: 15%;
+    z-index: 10;
+	}
+}
+
+@media(max-width:400px) {
+	.m-width {
+	width: 90%;
+	text-decoration: none;
+	}
+	header.carousel {
+    height: 450px;
+	}
+	.bpoint{
+	line-height: 1.6;
+	font-size: 0.9em;		
+	}
+}
+@media (min-width:481px) and (max-width:767px) {
+	.m-width {
+	width: 70%;
+	text-decoration: none;
+	}
+
+}
+@media (min-width: 767px) {
+	.border-right {
+		border-right: 2px solid #F2F2F2;
+	}
+	.m-width {
+	width: 90%;
+	text-decoration: none;
+	}
+	#item1 {
+		background: rgba(255,255,255,1) url(http://www.optrickmedia.com/img/wide1.jpg) no-repeat center;
+	}
+}
