@@ -24,18 +24,15 @@
   position: relative;
   min-height: 1px;
 }
-.col-xs-1 p, .col-sm-1 p, .col-md-1 p, .col-lg-1 p, .col-xs-2 p, .col-sm-2 p, .col-md-2 p, .col-lg-2 p, .col-xs-3 p, .col-sm-3 p, .col-md-3 p, .col-lg-3 p, .col-xs-4 p, .col-sm-4 p, .col-md-4 p, .col-lg-4 p, .col-xs-5 p, .col-sm-5 p, .col-md-5 p, .col-lg-5 p, .col-xs-6 p, .col-sm-6 p, .col-md-6 p, .col-lg-6 p, .col-xs-7 p, .col-sm-7 p, .col-md-7 p, .col-lg-7 p, .col-xs-8 p, .col-sm-8 p, .col-md-8 p, .col-lg-8 p, .col-xs-9 p, .col-sm-9 p, .col-md-9 p, .col-lg-9 p, .col-xs-10 p, .col-sm-10 p, .col-md-10 p, .col-lg-10 p, .col-xs-11 p, .col-sm-11 p, .col-md-11 p, .col-lg-11 p, .col-xs-12 p, .col-sm-12 p, .col-md-12 p, .col-lg-12 {
-  padding-right: 32px;
-}
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
-------------------------------
+ /*------------------------------
 ========= Navigation =========
-------------------------------*
+------------------------------*/
 a {
 	border-bottom: solid 1px;
-	color: rgba(117,46,7,1);
+	color: rgba(255,113,0,1);
 	font-family: 'open sans', sans serif;
 	font-size: 1.3em;
 	line-height: 1.9;
@@ -44,7 +41,7 @@ a {
 a:hover {
 	-webkit-animation: pulse 3s linear infinite;
 					animation: pulse 3s linear infinite;
-  transition: color 1s;
+  color: rgba(255,113,0,1);
 }
 nav {
 	height: 75px;
@@ -135,6 +132,19 @@ nav {
   background-color: transparent;
   transition: background-color 1s;
   border-color: rgba(255,113,0,1);
+}
+.img-hover {
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 30px;
+  background: rgba(255,255,255,0.8);
+  opacity: 0.8;
+  transition: all 1s;
+}
+.img-hover:hover {
+  background: rgba(255,255,255,1);
+  border: 2px solid  rgba(255,113,0,1);
+  opacity: 1;
+  box-shadow: 0px 4px 1px rgba(0,0,0,0.1);
 }
 .afatweight a{
 	color: #000000;
@@ -236,14 +246,14 @@ h1, h2, h3, h4, h5, h6, a {
 	line-height: 1.3;
 }
 h1 > strong {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 h2, h3{
-	line-height: 1.9;
+	line-height: 1.5;
 }
 h4 > strong {
-    font-size: 1.1em;
-    font-weight: 400 !important;
+  font-size: 1.1em;
+  font-weight: 400 !important;
 }
 h5 {
   font-size: 1.2em;
@@ -322,7 +332,7 @@ p {
 .bolder {
     line-height: 2;
     border: 5px solid rgba(0,0,0,90);
-    padding: 40px 0px;
+    padding: 40px 40px;
     margin-top: 50px;
 }
 .long{
@@ -348,7 +358,8 @@ p {
 ------------------------------*/
 .img-responsive{
   display: block;
-  max-width: 100%;
+  max-width: 97%;
+  padding: 10px;
 }
 /*------------------------------
 ========= Background =========
@@ -380,9 +391,8 @@ header.carousel {
 	border-bottom: 4px solid rgba(51,51,51,1);
 }
 .grey20 {
-    background: transparent linear-gradient(to bottom, #CDCDCD 0%, #FFFFFF 100%) repeat scroll 0% 0%;
-    padding: 50px 0px;
-    margin: 0px auto;
+  background: transparent linear-gradient(to bottom, #CDCDCD 0%, #FFFFFF 100%) repeat scroll 0% 0%;
+  margin: 0px auto;
 }
 .bpoint{
 	background: url(http://optrickmedia.com/img/point.png) no-repeat center;
@@ -390,7 +400,6 @@ header.carousel {
 }
 .bgrey {
 	background: transparent linear-gradient(to bottom, #CDCDCD 0%, #1C1C1C 100%) repeat scroll 0% 0%;
-	padding: 10px 0;
 }
 .bgreyblanc {
 	background: transparent linear-gradient(to bottom, #CDCDCD 0%, #E3E3E3 100%) repeat scroll 0% 0%;
@@ -398,7 +407,6 @@ header.carousel {
 .bgreyfooter {
 	background: transparent linear-gradient(to bottom, #E3E3E3 0%, #CDCDCD 100%) repeat scroll 0% 0%;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-	padding: 50px 0;
 }
 .bblanc {
 background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
@@ -406,7 +414,6 @@ background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220
 .bblancgris{
 	background: transparent linear-gradient(to bottom, #FEFEFE 10%, #CDCDCD 100%) repeat scroll 0% 0%;
 	margin: 0 auto;
-	padding: 50px 0 70px 0;
 }
 .bgreyer {
 	background: transparent linear-gradient(to bottom, #FFFFFF 100%, #A2A0A0 100%) repeat scroll 0% 0%;
@@ -424,7 +431,6 @@ background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220
 }
 .borange {
 	background: transparent linear-gradient(to bottom, rgba(255,113,0,1) 10%, #ff7600 10%) repeat scroll 0% 0%;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 .borangewall {
 	background: transparent linear-gradient(to bottom, #EE620B 5%, rgba(255,113,0,1) 100%) repeat scroll 0% 0%;
@@ -510,7 +516,9 @@ hr{
 	padding: 20px !important;
 }
 .padding40 {
-	padding: 40px !important;
+	padding-top: 40px !important;
+  padding-bottom: 40px !important;
+
 }
 .space-top {
 	padding-top: 40px;
@@ -546,6 +554,12 @@ hr{
 	}
 }
 @media(max-width:767px) {
+  h1 > strong {
+    font-size: 0.9em;
+  }
+  h4 > strong {
+    font-size: 0.8em;
+  }
   .img-portfolio {
       margin-bottom: 15px;
   }
@@ -553,16 +567,28 @@ hr{
       height: 70%;
   }
   .container{
-  padding: 0 15px;
+    padding: 0 15px;
+  }
+  .m-padding20 {
+    padding-top: 20px;
+  }
+  .btn-xfat{
+  	border-radius: 10px;
+  	border-width: 2px;
+    font-size: 1em;
+  	letter-spacing: 1px;
+  	padding: 10px 20px;
+    width: auto;
+    margin-bottom: 20px;
   }
   .quart {
-  height: 300px;
-  clear: both;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100% !important;
-  height: 100% !important;
+    height: 300px;
+    clear: both;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100% !important;
+    height: 100% !important;
   }
   .quart, .tier {
   	width: 75% !important;
@@ -614,26 +640,11 @@ hr{
     margin-left: 0 !important;
   }
 }
-
-@media(max-width:400px) {
-	.m-width {
-	width: 90%;
-	text-decoration: none;
-	}
-	header.carousel {
-    height: 450px;
-	}
-	.bpoint{
-	line-height: 1.6;
-	font-size: 0.9em;
-	}
-}
 @media (min-width:481px) and (max-width:767px) {
 	.m-width {
 	width: 70%;
 	text-decoration: none;
 	}
-
 }
 @media (min-width: 767px) {
 	.border-right {
@@ -649,6 +660,19 @@ hr{
 	}
 	#item1 {
 		background: rgba(255,255,255,1) url(http://www.optrickmedia.com/img/wide1.jpg) no-repeat center;
+	}
+}
+@media(max-width:400px) {
+	.m-width {
+	width: 90%;
+	text-decoration: none;
+	}
+	header.carousel {
+    height: 450px;
+	}
+	.bpoint{
+	line-height: 1.6;
+	font-size: 0.9em;
 	}
 }
 /*------------------------------
