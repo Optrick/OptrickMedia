@@ -105,6 +105,15 @@ nav {
 	text-decoration: none;
 	text-transform: uppercase;
 }
+.btn-fat{
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 200px !important;
+}
 .btn-contact {
   color: rgba(255,113,0,1);
   background-color: transparent;
@@ -139,12 +148,17 @@ nav {
   background: rgba(255,255,255,0.8);
   opacity: 0.8;
   transition: all 1s;
+  padding: 10px;
 }
 .img-hover:hover {
   background: rgba(255,255,255,1);
   border: 2px solid  rgba(255,113,0,1);
   opacity: 1;
-  box-shadow: 0px 4px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 1px rgba(0,0,0,0.2);
+}
+.img-portfolio {
+  border: 2px solid rgba(0,0,0,0.6);
+  padding: 0;
 }
 .afatweight a{
 	color: #000000;
@@ -359,7 +373,6 @@ p {
 .img-responsive{
   display: block;
   max-width: 97%;
-  padding: 10px;
 }
 /*------------------------------
 ========= Background =========
@@ -392,7 +405,12 @@ header.carousel {
 }
 .grey20 {
   background: transparent linear-gradient(to bottom, #CDCDCD 0%, #FFFFFF 100%) repeat scroll 0% 0%;
-  margin: 0px auto;
+}
+.bblanc {
+  background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
+}
+.bgreyblanc {
+	background: transparent linear-gradient(to bottom, rgba(220,219,218,1), rgba(255,255,255,1));
 }
 .bpoint{
 	background: url(http://optrickmedia.com/img/point.png) no-repeat center;
@@ -401,17 +419,12 @@ header.carousel {
 .bgrey {
 	background: transparent linear-gradient(to bottom, #CDCDCD 0%, #1C1C1C 100%) repeat scroll 0% 0%;
 }
-.bgreyblanc {
-	background: transparent linear-gradient(to bottom, #CDCDCD 0%, #E3E3E3 100%) repeat scroll 0% 0%;
-}
+
 .bgreyfooter {
 	background: transparent linear-gradient(to bottom, #E3E3E3 0%, #CDCDCD 100%) repeat scroll 0% 0%;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
-.bblanc {
-background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
-}
-.bblancgris{
+.bblancgris {
 	background: transparent linear-gradient(to bottom, #FEFEFE 10%, #CDCDCD 100%) repeat scroll 0% 0%;
 	margin: 0 auto;
 }
@@ -513,12 +526,12 @@ hr{
 	margin-bottom: 20px !important;
 }
 .padding20 {
-	padding: 20px !important;
+	padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 .padding40 {
 	padding-top: 40px !important;
   padding-bottom: 40px !important;
-
 }
 .space-top {
 	padding-top: 40px;
@@ -548,7 +561,10 @@ hr{
   }
 }
 @media(max-width:950px) {
-
+  .spacer {
+    padding-top: 10px;
+    padding-left: 8px;
+  }
 	.tfond-noir{
 	width: 100%;
 	}
@@ -569,17 +585,17 @@ hr{
   .container{
     padding: 0 15px;
   }
-  .m-padding20 {
-    padding-top: 20px;
-  }
   .btn-xfat{
-  	border-radius: 10px;
-  	border-width: 2px;
+    border-radius: 10px;
+    border-width: 2px;
     font-size: 1em;
-  	letter-spacing: 1px;
-  	padding: 10px 20px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
     width: auto;
     margin-bottom: 20px;
+  }
+  .m-padding20 {
+    padding-top: 20px;
   }
   .quart {
     height: 300px;
