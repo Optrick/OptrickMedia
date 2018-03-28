@@ -112,7 +112,7 @@ nav {
   letter-spacing: 1px;
   padding: 10px 20px;
   margin-bottom: 20px;
-  width: 200px !important;
+  width: auto !important;
 }
 .btn-contact {
   color: rgba(255,113,0,1);
@@ -157,6 +157,10 @@ nav {
   box-shadow: 0px 4px 1px rgba(0,0,0,0.2);
 }
 .img-portfolio {
+  border: 2px solid rgba(0,0,0,0.6);
+  padding: 20px 10px;
+}
+.img-btn {
   border: 2px solid rgba(0,0,0,0.6);
   padding: 0;
 }
@@ -525,6 +529,9 @@ hr{
 	margin-top: 20px !important;
 	margin-bottom: 20px !important;
 }
+.margin-bottom20 {
+	margin-bottom: 20px !important;
+}
 .padding20 {
 	padding-top: 20px !important;
   padding-bottom: 20px !important;
@@ -597,6 +604,10 @@ hr{
   .m-padding20 {
     padding-top: 20px;
   }
+  .border-left {
+    padding-top: 20px;
+  }
+
   .quart {
     height: 300px;
     clear: both;
@@ -680,15 +691,15 @@ hr{
 }
 @media(max-width:400px) {
 	.m-width {
-	width: 90%;
-	text-decoration: none;
+  	width: 90%;
+  	text-decoration: none;
 	}
 	header.carousel {
     height: 450px;
 	}
 	.bpoint{
-	line-height: 1.6;
-	font-size: 0.9em;
+  	line-height: 1.6;
+  	font-size: 0.9em;
 	}
 }
 /*------------------------------
