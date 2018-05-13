@@ -1,8 +1,6 @@
 /*!
  * Bienvenue dans le template d'Optrick Media
- * Framework hybride en migration conçu autour de:
- * Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
-
+ * Framework hybride conçu avec Bootstrap
  /*------------------------------
  ========= Global =========
  ------------------------------*/
@@ -23,6 +21,9 @@
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
+}
+.col-sm-4 p {
+  margin-right: 40px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -152,7 +153,7 @@ nav {
 }
 .img-hover:hover {
   background: rgba(255,255,255,1);
-  border: 2px solid  rgba(255,113,0,1);
+  border: 2px solid rgba(255,113,0,1);
   opacity: 1;
   box-shadow: 0px 4px 1px rgba(0,0,0,0.2);
 }
@@ -187,61 +188,26 @@ nav {
   animation: pulse 3s  linear infinite;
 	background: transparent !important;
 }
-.bpoint a{
-	border-radius: 4px;
-	font-size: 3em;
-	color: #000000;
-	height: 53px;
-	text-decoration: none;
-	padding: 3px 10px;
+.carousel-indicators.center {
+    position: relative !important;
+    padding-top: 40px;
+    width: 100%;
+    left: 0%;
 }
-.bpoint a:hover {
-	-webkit-animation: pulse 3s linear infinite;
-          animation: pulse 3s linear infinite;
-	color: rgba(255,113,0,1);
-	text-decoration: none;
-	font-weight: 700;
+.carousel-indicators.center > li {
+    background-color: rgba(255,255,255,0.2);
 }
-.bpoint a:visited {
-	background-color: rgba(255,113,0,1);
-	border-radius: 4px;
-	font-size: 2.5em;
-	color: #000000;
-	height: 20px;
-	text-decoration: none;
+.carousel-indicators > li {
+  background-color: rgba(0,0,0,1);
+  width: 12px;
+  height: 12px;
 }
-.bpoint a:active,
-.bpoint a .active,
-.open > .dropdown-toggle.bpoint a  {
-	background-color: #000000;
-}
-.bpoint a :focus,
-.bpoint a .focus,
-.bpoint a :active,
-.bpoint a .active,
-.bpoint a .disabled,
-.bpoint a [disabled],
-fieldset[disabled] .bpoint a ,
-.bpoint a .disabled:hover,
-.bpoint a [disabled]:hover,
-fieldset[disabled] .bpoint a :hover,
-.bpoint a .disabled:focus,
-.bpoint a [disabled]:focus,
-fieldset[disabled] .bpoint a :focus,
-.bpoint a .disabled.focus,
-.bpoint a [disabled].focus,
-fieldset[disabled] .bpoint a .focus,
-.bpoint a .disabled:active,
-.bpoint a [disabled]:active,
-fieldset[disabled] .bpoint a :active,
-.bpoint a .disabled.active,
-.bpoint a [disabled].active,
-fieldset[disabled] .bpoint a .active {
-	background: transparent linear-gradient(to bottom, rgba(255,113,0,1) 10%, #ff7600 10%) repeat scroll 0% 0%;
-  border-color: rgba(255,113,0,1);
-  color: rgba(255,113,0,1);
-}
+.carousel-indicators .active {
+  -webkit-animation: pulse-background 1s linear infinite;
+          animation: pulse-background 1s linear infinite;
 
+  background: rgba(252,110,3,1) !important;
+}
 /*------------------------------
 ========= Typo =========
 ------------------------------*/
@@ -269,18 +235,22 @@ h1 > strong {
 h2, h3{
 	line-height: 1.5;
 }
+h4 {
+  font-size: 1.7em;
+}
 h4 > strong {
   font-size: 1.1em;
   font-weight: 400 !important;
 }
 h5 {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 p {
 	font-family: 'open sans', sans serif;
-	font-size: 1.3em;
+	font-size: 1.7em;
 	font-weight: 300;
 	padding-top: 15px;
+  line-height: 1.5;
 }
 .exergue ul{
 	padding: 8px 0;
@@ -313,6 +283,12 @@ p {
 .entete-OM p:first-of-type {
 	font-size: 2.8em;
 }
+.intro-services h1 {
+  padding-bottom: 8px;
+}
+.item h1 {
+  padding-bottom: 15px;
+}
 .text-right p {
 	text-align: right;
 	padding-right: 0 !important;
@@ -326,6 +302,20 @@ p {
 .tier p {
 	padding-right: 15px;
 }
+.rounded {
+	background: rgba(0,0,0,0.80);
+	color: rgba(255,113,0,1);
+	width: 50px;
+	border: 4px solid rgba(0,0,0,0.80);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px; /* future proofing */
+	-khtml-border-radius: 50px; /* for old Konqueror browsers */
+}
+.rounded h1 {
+	padding: 0 !important;
+	margin: 12px;
+}
 .torange {
 	color: rgba(255,113,0,1);
 }
@@ -335,8 +325,11 @@ p {
 .tblancsale {
 	color:rgba(255,255,255, 0.9)
 }
-.tblanc {
+.tblanc, .tblanc p {
 	color: rgba(255,255,255,1);
+}
+.tblanc70 {
+  color: rgba(255,255,255,0.7) !important;
 }
 .tblanc20 {
   color: rgba(198,199,201,1);
@@ -353,135 +346,13 @@ p {
     padding: 40px 40px;
     margin-top: 50px;
 }
-.long{
-	width: 77%;
-}
-.mediumm{
-	width: 58%;
-}
-.medium{
-	width: 40%;
-}
-.short{
-	width: 18%;
-}
-.tjustify {
-  text-align: justify;
-}
-.tnowrap {
-  white-space: nowrap;
-}
 /*------------------------------
-========= Image =========
+========= hr =========
 ------------------------------*/
-.img-responsive{
-  display: block;
-  max-width: 97%;
-}
-/*------------------------------
-========= Background =========
-------------------------------*/
-#top {
-	background: url(http://www.optrickmedia.com/img/headerprague.jpg) rgba(0,0,0,1) no-repeat center;
-	min-height: 650px;
-	margin: 0 auto;
-	padding: 0;
-}
-#item1 {
-	background: rgba(247,247,247,1);
-	background-image: none;
-}
-#item2 {
-	background: transparent linear-gradient(to bottom, rgba(255,113,0,1) 10%, #ff7600 10%) repeat scroll 0% 0%;
-}
-header.carousel {
-    height: 400px;
-}
-.carousel {
-  position: relative;
-  background: #1C1C1C;
-}
-.bordure-orange {
-	border-bottom: 3px solid rgba(255,113,0,1);
-}
-.bordure-noir {
-	border-bottom: 4px solid rgba(51,51,51,1);
-}
-.grey20 {
-  background: transparent linear-gradient(to bottom, #CDCDCD 0%, #FFFFFF 100%) repeat scroll 0% 0%;
-}
-.bblanc {
-  background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
-}
-.bgreyblanc {
-	background: transparent linear-gradient(to bottom, rgba(220,219,218,1), rgba(255,255,255,1));
-}
-.bpoint{
-	background: url(http://optrickmedia.com/img/point.png) no-repeat center;
-	height: 74px;
-}
-.bgrey {
-	background: transparent linear-gradient(to bottom, #CDCDCD 0%, #1C1C1C 100%) repeat scroll 0% 0%;
-}
-
-.bgreyfooter {
-	background: transparent linear-gradient(to bottom, #E3E3E3 0%, #CDCDCD 100%) repeat scroll 0% 0%;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-}
-.bblancgris {
-	background: transparent linear-gradient(to bottom, #FEFEFE 10%, #CDCDCD 100%) repeat scroll 0% 0%;
-	margin: 0 auto;
-}
-.bgreyer {
-	background: transparent linear-gradient(to bottom, #FFFFFF 100%, #A2A0A0 100%) repeat scroll 0% 0%;
-}
-.bdarken {
-	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(33,34,35,1)) repeat scroll 0% 0%;
-  height: auto;
-}
-.bdarke {
-	background: linear-gradient(to bottom, rgba(33,34,35,1), rgba(0,0,0,1)) repeat scroll 0% 0%;
-}
-.bdarkeWall {
-	background: linear-gradient(to bottom, #242424 20%, #161616 90%) repeat scroll 0% 0%;
-	height: 230px;
-}
-.borange {
-	background: transparent linear-gradient(to bottom, rgba(255,113,0,1) 10%, #ff7600 10%) repeat scroll 0% 0%;
-}
-.borangewall {
-	background: transparent linear-gradient(to bottom, #EE620B 5%, rgba(255,113,0,1) 100%) repeat scroll 0% 0%;
-	height: 500px;
-}
-.list-unstyled.list-inline li {
-  padding-bottom: 15px;
-}
-.bfirefooter {
-	background: transparent linear-gradient(to bottom, rgba(255,113,0,1) 20%, #EE620B 100%) repeat scroll 0% 0%;
-}
-.tfond-blanc{
-	background: rgba(255,255,255,0.5);
-	border-radius: 5px;
-	box-shadow:0 0 10px 8px rgba(255,255,255,0.6)
-}
-footer span{
-	color: #642100;
-	font-size: 1.3em;
-	font-weight: 300;
-	padding: 5px 10px;
-}
-.tfond-noir{
-	background: rgba(16,16,16,0.61);
-	border-radius: 5px;
-	box-shadow:0 0 10px 10px rgba(6,16,16,0.6);
-	width: 40%;
-	max-width: 360px;
-	min-width: 250px;
-}
 hr{
 	border-top: 1px solid rgba(0,0,0,0.3) !important;
 }
-.hr {
+.hr-pulse {
 	-webkit-animation: pulse-line 5s linear infinite;
 					animation: pulse-line 5s linear infinite;
     border-bottom: 2px solid #ff4a03;
@@ -508,19 +379,178 @@ hr{
 	border: 0;
 	border-top: 0;
 }
-.rounded {
-	background: rgba(0,0,0,0.80);
-	color: rgba(255,113,0,1);
-	width: 50px;
-	border: 4px solid rgba(0,0,0,0.80);
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px; /* future proofing */
-	-khtml-border-radius: 50px; /* for old Konqueror browsers */
+/*------------------------------
+========= Ajustement section =========
+------------------------------*/
+.clear {
+  clear: both;
 }
-.rounded h1 {
-	padding: 0 !important;
-	margin: 12px;
+.long{
+	width: 77%;
+}
+.mediumm{
+	width: 58%;
+}
+.medium{
+	width: 40%;
+}
+.short{
+	width: 18%;
+}
+.tjustify {
+  text-align: justify;
+}
+.tnowrap {
+  white-space: nowrap;
+}
+/*------------------------------
+========= Image =========
+------------------------------*/
+img {
+  margin: 0 auto;
+}
+.img-responsive{
+  display: block;
+  max-width: 97%;
+}
+.bloc-marchandise {
+  min-height: 385px;
+}
+.img-marchandise {
+  max-height: 450px;
+}
+.anim-media {
+  animation: 8s ease-in-out alternate infinite anim-media;
+}
+.img-media {
+  overflow: hidden;
+  height: 445px;
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 722px;
+  border: 2px solid black;
+}
+/*------------------------------
+========= Special ID item =========
+------------------------------*/
+.LogoTeamBaska {
+  padding: 20px;
+	width: 400px;
+  height: auto;
+
+}
+/*------------------------------
+========= Background =========
+------------------------------*/
+#top {
+	background: url(http://www.optrickmedia.com/img/headerprague.jpg) rgba(0,0,0,1) no-repeat center;
+	min-height: 650px;
+	margin: 0 auto;
+	padding: 0;
+}
+.carousel-marque {
+  background: rgba(255,255,255,0.1);
+  height: 500px !important;
+}
+.carousel .item, .carousel .item.active, .carousel .carousel-inner {
+    height: 500px;
+}
+.carousel {
+  position: relative;
+}
+.card {
+  position: absolute;
+  bottom: -450px;
+  left: 4%;
+  z-index: 15;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+.card-test {
+  min-height: 500px !important;
+}
+.card-test, .card-top {
+  margin-left: 4%;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+.card-top {
+  position: absolute;
+  bottom: 0%;
+  background: rgba(0,0,0,1) !important;
+}
+.mandat {
+  padding-top: 175px;
+}
+.bordure-orange {
+	border-bottom: 3px solid rgba(255,113,0,1);
+}
+.bordure-noir {
+	border-bottom: 4px solid rgba(51,51,51,1);
+}
+/*--  Background OptrickMedia  ---*/
+.b-grey-blanc {
+  background: transparent linear-gradient(to bottom, rgba(220,219,218,1), rgba(255,255,255,1));
+}
+.b-grey-blanc.bloc-info {
+  min-height: 1100px
+}
+.b-blanc-grey {
+  background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
+}
+.b-blanc-grey-media {
+  background-image: url(../img/cadre-imac.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+  height: 800px;
+  background-size: 50%;
+}
+.b-blanc-grey-media-test {
+  background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1)) no-repeat;
+  height: 650px;
+}
+.b-grey-noir {
+	background: transparent linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,1));
+}
+.b-darken {
+	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(33,34,35,1)) repeat scroll 0% 0%;
+  height: auto;
+}
+.b-darke {
+	background: linear-gradient(to bottom, rgba(33,34,35,1), rgba(0,0,0,1)) repeat scroll 0% 0%;
+}
+.b-orange {
+	background: transparent linear-gradient(to bottom, rgba(255,113,0,1), rgba(255,113,0,1));
+}
+.b-orangerrr {
+	background: transparent linear-gradient(to bottom, rgba(255,113,0,1), rgba(238,98,11,1));
+}
+.bpoint{
+	background: url(http://optrickmedia.com/img/point.png) no-repeat center;
+	height: 74px;
+}
+/*--  Background portfolio  ---*/
+.bteambaska {
+  background: url(../img/bTeamBaska.jpg) no-repeat center center;
+  height: 500px;
+}
+.list-unstyled.list-inline li {
+  padding-bottom: 15px;
+}
+.tfond-noir{
+	background: rgba(16,16,16,0.61);
+	border-radius: 5px;
+	box-shadow:0 0 10px 10px rgba(6,16,16,0.6);
+	width: 40%;
+	max-width: 360px;
+	min-width: 250px;
+}
+footer span{
+	color: #642100;
+	font-size: 1.3em;
+	font-weight: 300;
+	padding: 5px 10px;
 }
 /*------------------------------
 ========= Spacer =========
@@ -531,6 +561,9 @@ hr{
 }
 .margin-bottom20 {
 	margin-bottom: 20px !important;
+}
+.padding-top8 {
+	padding-top: 8px !important;
 }
 .padding20 {
 	padding-top: 20px !important;
@@ -552,6 +585,9 @@ hr{
 .spacer {
 	padding-left: 20px;
 }
+.Bspace-top {
+	padding-top: 80px;
+}
 .Dspace-top {
 	padding-top: 130px;
 }
@@ -559,7 +595,7 @@ hr{
 ======== Media-Queries ========
 ------------------------------*/
 @media(max-width:1200px) {
-  .customer-img, .img-related {
+  .img-related {
     margin-bottom: 30px;
   }
   .quart {
@@ -607,7 +643,15 @@ hr{
   .border-left {
     padding-top: 20px;
   }
-
+  .b-blanc-grey-media {
+    background-image: url(../img/cadre-imac290px.png), linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
+    height: 410px;
+  }
+  .img-media {
+    margin-top: 38px;
+    width: 268px;
+    height: 160px;
+}
   .quart {
     height: 300px;
     clear: both;
@@ -645,13 +689,6 @@ hr{
     left: 15%;
     z-index: 10;
   }
-  .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 10%;
-    left: 15%;
-    z-index: 10;
-  }
   /*--  ======== Ajustement visuel nav mobile ========  --*/
   .nav {
   	min-height: 75px !important;
@@ -672,6 +709,7 @@ hr{
 	width: 70%;
 	text-decoration: none;
 	}
+
 }
 @media (min-width: 767px) {
 	.border-right {
@@ -686,10 +724,10 @@ hr{
 	text-decoration: none;
 	}
 	#item1 {
-		background: rgba(255,255,255,1) url(http://www.optrickmedia.com/img/wide1.jpg) no-repeat center;
+		background: url(#/img/wide.jpg) no-repeat center !important;
 	}
 }
-@media(max-width:400px) {
+@media (max-width:400px) {
 	.m-width {
   	width: 90%;
   	text-decoration: none;
@@ -701,6 +739,9 @@ hr{
   	line-height: 1.6;
   	font-size: 0.9em;
 	}
+  p {
+    margin: 0 !important;
+  }
 }
 /*------------------------------
 ========= Animation =========
@@ -725,6 +766,14 @@ hr{
   }
   50% {
     color: rgba(229,81,0,1);
+  }
+}
+@keyframes pulse-background {
+  0%, 100% {
+		background: rgba(252,110,3,1);
+  }
+  50% {
+		background: rgba(51,51,51,1);
   }
 }
 @keyframes pulse-btn {
@@ -753,3 +802,10 @@ hr{
     transform: rotate(360deg);
   }
 }
+@keyframes anim-media {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+      margin-top: -600px;
+  }
