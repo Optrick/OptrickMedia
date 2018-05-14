@@ -726,7 +726,7 @@ footer span{
 	text-decoration: none;
 	}
 	#item1 {
-		background: url(#/img/wide.jpg) no-repeat center !important;
+		background: url(../img/ImpactVisuel.jpg) no-repeat center !important;
 	}
 }
 @media (max-width:400px) {
