@@ -262,6 +262,9 @@ p {
 ul.list {
   font-size: 1.3em;
 }
+ul.list li:first-of-type {
+    padding-top: 8px;
+}
 .supersize {
 	font-size: 3.5em !important;
 }
@@ -312,7 +315,6 @@ ul.list {
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px; /* future proofing */
-	-khtml-border-radius: 50px; /* for old Konqueror browsers */
 }
 .rounded h1 {
 	padding: 0 !important;
@@ -386,6 +388,9 @@ hr{
 ------------------------------*/
 .clear {
   clear: both;
+}
+.f-left {
+  float: left;
 }
 .long{
 	width: 77%;
