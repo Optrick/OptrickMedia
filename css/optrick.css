@@ -449,7 +449,6 @@ img {
 .img-media {
   overflow: hidden;
   height: 445px;
-  margin-top: 150px;
   margin-right: auto;
   margin-left: auto;
   width: 722px;
@@ -528,17 +527,6 @@ img {
 }
 .b-blanc-grey {
   background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
-}
-.b-blanc-grey-media {
-  background-image: url(../img/cadre-imac.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom, center;
-  height: 800px;
-  background-size: 50%;
-}
-.b-blanc-grey-media-test {
-  background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1)) no-repeat;
-  height: 650px;
 }
 .b-grey-noir {
 	background: transparent linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,1));
