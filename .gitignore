@@ -1,4 +1,6 @@
 .DS_Store
+.BridgeCache
+.BridgeCacheT
 node_modules
 bower_components
 .tmp
