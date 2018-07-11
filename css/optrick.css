@@ -224,6 +224,13 @@ nav {
   animation: pulse-background 1s linear infinite;
   background: rgba(252,110,3,1) !important;
 }
+.carousel-control.left {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+.carousel-control.right {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+
 /*------------------------------
 ========= Typo =========
 ------------------------------*/
@@ -267,6 +274,9 @@ p {
 	font-weight: 300;
 	padding-top: 15px;
   line-height: 1.5;
+}
+sup {
+  text-transform: lowercase;
 }
 .exergue ul{
 	padding: 8px 0;
@@ -446,6 +456,9 @@ img {
 .anim-media {
   animation: 8s ease-in-out alternate infinite anim-media;
 }
+.anim-media-long {
+  animation: 8s ease-in-out alternate infinite anim-media-long;
+}
 .img-media {
   overflow: hidden;
   height: 445px;
@@ -523,7 +536,7 @@ img {
   background: transparent linear-gradient(to bottom, rgba(220,219,218,1), rgba(255,255,255,1));
 }
 .b-grey-blanc.bloc-info {
-  min-height: 1100px
+  min-height: 500px
 }
 .b-blanc-grey {
   background: transparent linear-gradient(to bottom, rgba(255,255,255,1), rgba(220,219,218,1));
@@ -555,6 +568,14 @@ img {
 /*--  Background portfolio  ---*/
 .bteambaska {
   background: url(../img/bTeamBaska.jpg) no-repeat center center;
+  height: 500px;
+}
+.bAquaIngenium {
+  background: url(../img/bAquaIngenium.jpg) no-repeat center center;
+  height: 500px;
+}
+.bNoirSavon {
+  background: url(../img/bNoirSavon.jpg) no-repeat center center;
   height: 500px;
 }
 .list-unstyled.list-inline li {
@@ -854,3 +875,12 @@ footer span{
   100% {
       margin-top: -600px;
   }
+}
+@keyframes anim-media-long {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+      margin-top: -920px;
+  }
+}
