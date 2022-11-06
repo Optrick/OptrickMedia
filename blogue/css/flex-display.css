@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*------  Mobile & Light Growing UP ------*/
+body {
+  background-color: lightblue !important;
+}
+section {
+  background-color: #52ACFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section_block {
+  height: 450px;
+}
+.block_media {
+  background-color: #2AF598;
+  width: ;
+  margin: 2%;
+}
+
+@media screen and (min-width: 1001px) {
+  .section_block {
+  }
+}
+
+@media screen and (min-width: 2440px) {
+  .block_media {
+  }
+}

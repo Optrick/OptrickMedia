@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Optrick Media" />
+<meta name="description" content="Une agence axé sur le design et le web" />
+<meta name="keywords" content="Web,stratégie marketing,branding,responsive,content,agence,québec,design,development,ui,ux,referencement" />
+<title>Optrick Media - Agence spécialiste en design graphique, design web UI/UX, branding.</title>
+<link rel="icon" type="image/png" href="http://optrickmedia.com/img/favicon.png">
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="../css/modern-business.css" rel="stylesheet">
+<!-- Feuille migration optrick -->
+<link href="../css/optrick.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Arima+Madurai:300,400,700,900|Open+Sans:300,400|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<body>
+<!-- ==================================================
+Navigation
+================================================== -->
+<nav class="navbar b-darken" role="navigation">
+  <div class="container">
+    <div class="navbar-header"> <!-- Brand and toggle get grouped for better mobile display -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand active" href="http://optrickmedia.com/">OM</a>
+    </div> <!-- /.navbar-header -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" title="Accueil">Accueil</a></li>
+        <li><a href="portfolio.html" title="Portfolio des projets">Portfolio</a></li>
+        <li><a href="Services.html" title="Services">Services</a></li>
+        <li><a href="contact.html" title="Infomation de contact">Contact</a></li>
+      </ul>
+    </div> <!-- /.collapse navbar-collapse -->
+  </div> <!-- /.container -->
+</nav>
+<!-- ==================================================
+1th part services content - 1re partie du contenu services
+================================================== -->
+<article id="services">
+  <div class="b-blanc-grey gris tgrey">
+    <div class="container padding40 oswald">
+      <div class="col-xs-12">
+        <h1 class="text-uppercase tfatweight supersize surtitre">
+          <strong>Boutique</strong>
+        </h1>
+        <div class="hr-pulse margin20"></div>
+      </div> <!-- /.col-xs-12 -->
+      <div class="col-xs-12">
+        <div class="post-content section-inner">
+          <section class="main-content">
+            <form class="cart" id="cart-hplus">
+              <div class="col-xs-4">
+              <div class="item">
+                <h2>H+ Backetball Sneakers</h2>
+                <p>Run faster, jump higher.</p>
+                <div class="info">
+                  <span>Price: $90/pair</span>
+                </div>
+                <div class="order">
+                  <label for="txt-q-bball">Quantity desired:</label>
+                  <input type="numbrer" min="0" id="txt-q-bball" size="3" placeholder="0">
+                </div>
+              </div>
+              <div class="item space-top">
+                <h2>Power</h2>
+                <p>Run faster, jump higher.</p>
+                <div class="info">
+                  <span>Price: $90/pair</span>
+                </div>
+                <div class="order">
+                  <label for="txt-q-bball">Quantity desired:</label>
+                  <input type="numbrer" min="0" id="txt-q-power" size="3" placeholder="0">
+                </div>
+              </div>
+              <div class="item space-top">
+                <h2>Jersey</h2>
+                <p>Run Jersey, jump Jersey.</p>
+                <div class="info">
+                  <span>Price: $10/pair</span>
+                </div>
+                <div class="order">
+                  <label for="txt-q-bball">Quantity desired:</label>
+                  <input type="numbrer" min="0" id="txt-q-jersey" size="3" placeholder="0">
+                </div>
+              </div>
+              <div class="item space-top">
+                <h2>Water Bottle</h2>
+                <p>Drink ZHE BEST.</p>
+                <div class="info">
+                  <span>Price: $4/unit</span>
+                </div>
+                <div class="order">
+                  <label for="txt-q-water">Quantity desired:</label>
+                  <input type="numbrer" min="0" id="txt-q-water" size="3" placeholder="0">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4 border-left">
+              <div id="summary">
+                <h2>Estimate Order</h2>
+                <div class="group state padding-top8">
+                  <label for="s-state">State(Required):</label>
+                  <select id="s-state" required="required">
+                    <option value="">- select -</option>
+                    <option value="CA">California (7.5% tax)</option>
+                    <option value="Wa">Seatle (6.5% tax)</option>
+                    <option value="IL">Illinois</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="PA">Pennsylvania</option>
+                  </select>
+                </div> <!-- /.group state -->
+                <div class="group method padding-top8">
+                  <label for="r-method-pickup">Shipping and Handling:</label>
+                  <br>
+                  <input type="radio" name="r_method" id="r-method-pickup" value="pickup" checked>
+                  <label for="r-method-pickup">Pickup (free)</label>
+                  <br>
+                  <input type="radio" name="r_method" value="usps" id="r-method-usps">
+                  <label for="r-method-usps">US Mail ($2/item)</label>
+                  <br>
+                  <input type="radio" name="r_method" value="ups" id="r-method-ups">
+                  <label for="r-method-ups">UPS ($3/item)</label>
+                  <br>
+                </div>
+                <div class="group special padding-top8">
+                  <label for="c-special-gift">Special:</label>
+                  <br>
+                  <input type="checkbox" name="c-special-gift" value="YES" id="c-special-gift">
+                  <label for="c-special-gift">This is a gift (include a card)</label>
+                  <br>
+                  <input type="checkbox" name="c-special-email" value="YES">
+                  <label for="c-special-email">Sign up for the mailing</label>
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-4 border-left">
+                <div class="group">
+                  <p>
+                    <label for="btn-estimate">Click to estimate:</label>
+                    <br>
+                    <input type="submit" id="btn-estimate" value="Estimate Total">
+                    <!--<button id="btn-estimate" type="submit" value="submit-true">
+                      Form submit button
+                    </button> -->
+                    <br>
+                    <input type="text" id="txt-estimate" placeholder="$0.00">
+                  </p>
+                  <div id="results">
+
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div> <!-- /.post-content section-inner -->
+      </div> <!-- /.col-xs-12 -->
+    </div> <!-- /.container -->
+  </div> <!-- /.b-blanc-grey gris -->
+</artcile>
+<!-- ==================================================
+Footer - Bas de page
+================================================== -->
+<footer class="b-orange">
+  <div class="container">
+    <div class="col-sm-12 text-center padding20">
+      <h6>© 2014 OPTRICK MEDIA. All rights reserved.</h6>
+    </div> <!-- ./col-sm-12 -->
+  </div> <!-- ./container -->
+</footer> <!-- ./b-orange -->
+<!-- ==================================================
+============= ============= ============= =============
+================================================== -->
+<!-- myScrypt -->
+<script src="js/myscript-boutique.js"></script>
+<!-- ============= ============= ============= ============= -->
+</body>
+</html>

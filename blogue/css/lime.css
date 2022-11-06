@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*------  Mobile & Light Growing UP ------*/
+body {
+  background-color: #A3FF1F !important;
+}
+.grid-container {
+  background-color: #FFEF2C;
+}
+.grid-x {
+  justify-content: space-around;
+}
+.grid-padding-x .grid-padding-x {
+  margin-right: 0;
+  margin-left: 0;
+}
+.grid-padding-x > .cell {
+  padding-right: 0;
+  padding-left: 0;
+}
+.cell{
+  background-color: #FFBF1F;
+}

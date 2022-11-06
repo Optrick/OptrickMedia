@@ -47,7 +47,7 @@ a:hover {
   color: rgba(255,113,0,1);
 }
 nav {
-	min-height: 75px;
+	height: 75px;
 	text-transform: uppercase !important;
 }
 .nav > li {
@@ -58,11 +58,10 @@ nav {
   font-size: 1.5em;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-  /* background-color: transparent !important; */
+  background-color: transparent !important;
 }
 .navbar {
   background: rgba(0,0,0,1);
-  border: none;
 }
 .navbar-header > a {
 	font-size: 2.8em;
@@ -70,8 +69,8 @@ nav {
   text-decoration: none;
 }
 .navbar-brand {
-  height: auto !important;
-  line-height: 30px;
+    height: auto !important;
+    line-height: 30px;
 }
 .navbar a {
   color: rgba(255,113,0,1);
@@ -534,8 +533,7 @@ img {
   display: table;
 }
 .b-grey-blanc {
-  background: linear-gradient(to bottom, rgba(220,219,218,1), rgba(255,255,255,1));
-  position: relative;
+  background: transparent linear-gradient(to bottom, rgba(220,219,218,1), rgba(255,255,255,1));
 }
 .b-grey-blanc.bloc-info {
   min-height: 500px
@@ -769,41 +767,22 @@ footer span{
   	min-height: 75px !important;
     height: auto;
   }
-  .navbar-header {
-    padding: 0 -15px;
-  }
-  .navbar-nav {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .navbar-header > a {
+  .navbar-header > a {    padding: 20px 10px;
     text-decoration: none;
   }
   .navbar-nav > li {
     padding: 15px 0;
   }
   .navbar-collapse{
-    position: relative;
     margin-left: 0 !important;
-    overflow-x: hidden;
-    margin: 0 !important;
-    padding: 0;
-    background-color: rgb(220, 220, 220);
-    background: linear-gradient(to bottom, rgb(220, 220, 220), rgb(240, 240, 240));
-    border-top: none;
   }
-  .nav.navbar-nav {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    background: linear-gradient(to bottom, rgb(220, 220, 220), rgb(240, 240, 240));
-    z-index: 10000;
-    text-align: center;
-    height: auto;
-  }
+}
+@media (min-width:481px) and (max-width:767px) {
 	.m-width {
-  	width: 70%;
-  	text-decoration: none;
+	width: 70%;
+	text-decoration: none;
 	}
+
 }
 @media (min-width: 767px) {
 	.border-right {
@@ -894,7 +873,7 @@ footer span{
     margin-top: 0;
   }
   100% {
-    margin-top: -600px;
+      margin-top: -600px;
   }
 }
 @keyframes anim-media-long {
@@ -902,6 +881,6 @@ footer span{
     margin-top: 0;
   }
   100% {
-    margin-top: -920px;
+      margin-top: -920px;
   }
 }

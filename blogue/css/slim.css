@@ -1,0 +1,130 @@
+/*  Small 400px  */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  /* make sure to cover the screen */
+  min-height: 100vh;
+  /* need a solid bg to hide the footer */
+  background: white;
+  /* put on top */
+  position: relative;
+  z-index: 1;
+  font: 16px/1.4 system-ui, sans-serif;
+  padding: 2rem;
+}
+footer {
+  /* place on the bottom */
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255,113,0);
+  background: linear-gradient(to bottom, rgba(255,113,0,1), rgba(255,113,0,1));
+  display: grid;
+  place-items: center;
+  padding: 50px 20px;
+}
+nav a:first-child {
+  font-size: 1.5em;
+}
+nav {
+
+}
+nav a {
+  padding: 0 15px 0 0;
+  line-height: 2em;
+  height: auto;
+  flex-wrap: wrap;
+  display: block;
+}
+nav a:first-of-type {
+  cursor: initial;
+  color: #000;
+  display: block;
+  line-height: 4em;
+  text-decoration: none;
+}
+h1, nav, p, hr {
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}  /* accessibilité   */
+.flexbox-containeur {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+.footer__inner {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.footer__item {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+/*  Medium 608px  */
+@media screen and (min-width: 608px) {
+.footer__item {
+    font-size: 1rem;
+  }
+}
+/*  large 960  */
+@media screen and (min-width: 960px) {
+  nav {
+    position: relative;
+    display: flex;
+    width: 100%
+  }
+  nav a {
+    float: left;
+  }
+  nav a:first-of-type {
+    flex-grow: 4;
+  }
+  nav a:not(:first-of-type) {
+    line-height: 6em;
+  }
+  nav::after  {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .inactive {
+    display: inline;
+  }
+  .footer__inner {
+    width: 90%;
+  }
+  .footer__inner {
+    flex-wrap: nowrap;
+  }
+  .footer__item {
+    padding-right: 4rem;
+    font-size: 1.1rem;
+    margin: 0;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+  }
+}
+/*  large 1440+  */

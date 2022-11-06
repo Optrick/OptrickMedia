@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture Electronique</title>
+    <style>
+    /*---- Basics Styles -----*/
+    *, ::before, ::after {
+      box-sizing: inherit;
+    }
+    html {
+      font-size: 18px;
+    }
+    body {
+      background: #eaeaea;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-weight: normal;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    ul {
+      margin: 0;
+    }
+    li {
+      margin: 0;
+      padding: 5px 15px !important;
+      text-align: left;
+      list-style-position: inside;
+    }
+    a {
+
+    }
+    div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+      -ms-interpolation-mode: bicubic;
+    }
+    h1, h2, h3, h4, h5, p {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-weight: 500;
+      font-style: normal;
+    }
+    h2 {
+      font-weight: 500;
+      font-style: normal;
+    }
+    h3 {
+
+    }
+    h4 {
+
+    }
+    h5 {
+
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    span {
+      font-size: 0.9em;
+    }
+    hr {
+    width: 80%;
+    border: .5px solid #CCC;
+    }
+    /*---- Basics Styles -----*/
+    .flex-container {
+      background: #FFFFFF;
+      border: 2px solid #555;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      padding: 8px;
+    }
+    .content-band {
+      display: table;
+      max-width: 761px;
+      min-height: 345px;
+      max-height: 525px;
+      margin: 0 auto;
+    }
+    .content-figure {
+
+    }
+    .item {
+      /* border: 1px solid rgba(50,0,245,1); */
+      margin: 0 auto;
+      padding: 0;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .flex-container.align-items-center {
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #Damier {
+      border: 1px solid #e0e0e0;
+      max-width: 761px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    #Damier .item {
+      width: 50%;
+    }
+    .content-text {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 8px;
+    }
+    .content-text.dame {
+      background-color: #FFFFFF;
+      padding: 50px;
+      text-align: left;
+    }
+    .content-figure.dame {
+      display: table-cell;
+    }
+    .link-sail {
+      color: #7a991c;
+    }
+    .link-sail:hover {
+      color: #191919;
+    }
+    /*---- Experimentation - block-dual_img_text----*/
+    /*------  Mobile & Light   ------*/
+    .section_block {
+      background-color: #52ACFF;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .block_media {
+      background-color: #FFE32C;
+      min-width: 350px;
+      max-width: 750px;
+      margin: 0;
+    }
+    .media_A {
+      padding: 6%;
+      border: 3px solid #FBAB7E;
+    }
+    .media_B {
+      margin: 6%;
+      border: 3px solid #F7CE68;
+    }
+    @media screen and (min-width: 1001px) {
+      .section_block {
+        flex-direction: row;
+      }
+      .block_media {
+        width: 50%;
+      }
+    }
+    @media screen and (min-width: 2440px) {
+      .block_media {
+        width: 30%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container align-items-center" id="Damier">
+      <div class="content-band">
+        <div class="item content-figure dame" id="dame1">
+          <figure style="text-align: center;">
+            <img title="" src="https://www.sail.ca/static/version1587651718/frontend/Sailpleinair/sailpleinair/en_CA/images/logo.svg" sizes="(max-width: 1024px) 100vw, 1024px" alt="Le logo de SAIL - Plein Air" data-constrained="true" width="250" height="800">
+            <!--
+              <figcaption >Embrace winter sport with Fat Bike.</figcaption>
+            -->
+          </figure>
+        </div>
+      </div>
+      <div class="content-band">
+        <div class="item content-text dame" id="dame4">
+          <p>Cher client, chère cliente,<br/ >Vous trouverez ci-joints deux documents relatifs à votre dernière transaction chez SAIL:</p>
+          <ul>
+            <li><a class="link-sail" href="#">Reçu de caisse SAIL</a></li>
+            <li><a class="link-sail" href="#">Reçu de transaction de paiement</a></li>
+          </ul>
+          <br />
+          <p><span style="color: #2c2c2c;">Merci de magasiner chez SAIL, une entreprise 100%. Contribuez à l’amélioration constante de notre service en complétant notre court sondage en ligne: </span><a class="link-sail" href="https://oramaweb.ca/intranet/cwx.cgi?_proj=SAI202001a&BANNIERE=1&Q1=16">Sondage</a></p>
+        </div>
+      </div><!-- /.content-band     -->
+      <hr>
+      <div class="content-band">
+        <div class="item content-text dame" id="dame4">
+          <p>Dear Customer,<br/ >You will find attached two documents regarding your last transaction at SAIL:</p>
+          <ul>
+            <li><a class="link-sail" href="#">SAIL receipt</a></li>
+            <li><a class="link-sail" href="#">Payment transaction receipt</a></li>
+          </ul>
+          <br />
+          <p><span style="color: #2c2c2c;">Thank you for shopping at SAIL, a 100% Canadian-owned company. Complete our short online survey to help contribute to the continuous improvement of our services:</span>
+            <a class="link-sail" href="https://oramaweb.ca/intranet/cwx.cgi?_proj=SAI202001a&BANNIERE=1&Q1=16">Sondage</a>
+          </p>
+        </div>
+      </div><!-- /.content-band     -->
+    </div> <!-- /.flex-container.align-items-center     -->
+
+
+  </body>
+</html>
